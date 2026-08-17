@@ -13,6 +13,9 @@ function getEnv(key: string, fallback?: string): string {
 }
 
 export const envData = {
+    sign: {
+        jwtToken: getEnv('JWT_KEY')
+    },
     db:{
         user: getEnv('DB_USER'),
         password: getEnv('DB_PASSWORD'),
